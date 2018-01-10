@@ -36,13 +36,13 @@
             </li>
 
             <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> User <i class="fa fa-fw fa-caret-down"></i></a>
+                <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="demo" class="collapse">
                     <li>
-                        <a href="#">User Post</a>
+                        <a href="./post.php">Admin Post</a>
                     </li>
                     <li>
-                        <a href="#">New User</a>
+                        <a href="#">User Post</a>
                     </li>
                 </ul>
             </li>
