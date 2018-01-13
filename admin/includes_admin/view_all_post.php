@@ -31,13 +31,21 @@
        <td>{$post_title}</td>
        <td>{$post_author}</td>
        <td><img class='img-responsive' src='../image/$post_image' alt='image'></td>
-       <td>{$post_content}</td>
+       <td>{$post_content}.<a class='btn btn-primary' href='' >Read More<span class='glyphicon glyphicon-chevron-right'></a></td>
        <td>{$post_tag}</td>
-        <td>{$post_date}</td>
+      <td>{$post_date}</td>
+      <td><a href='post.php?source=edit_post&p_id={$post_id}'>Edit</a></td>
+      <td><a href='post.php?delete={$post_id}'>Delete</a></td>
 
 
-     </tr>"; }
-
-  ?>
-
+     </tr>";
+    }
+?>
 </table>
+<?php
+if (isset($_GET['delete'])) {
+  $the_post_id=$_GET['delete'];
+  $query = "DELETE FROM posts WHERE post_id={$the_post_id}";
+  $delete_query = mysqli_query($connection, $query);
+}
+?>

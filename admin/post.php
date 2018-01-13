@@ -24,11 +24,11 @@
             $source ='';
           }
           switch ($source) {
-            case 'add_post':
-            include "includes_admin/add_post.php";
+            case 'add_admin_post':
+            include "includes_admin/add_admin_post.php";
             break;
-            case '35':
-            echo "DONE";
+            case 'edit_post':
+            include "includes_admin/edit_post.php";
             break;
             default:
             include "includes_admin/view_all_post.php";

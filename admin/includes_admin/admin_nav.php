@@ -42,7 +42,7 @@
                         <a href="./post.php">Admin Post</a>
                     </li>
                     <li>
-                        <a href="#">User Post</a>
+                        <a href="post.php?source=add_admin_post">Add Post</a>
                     </li>
                 </ul>
             </li>

@@ -19,10 +19,11 @@ if(isset($_POST['create_post'])){
   $query = "INSERT INTO posts(post_cat_id, post_title, post_author, post_date, post_image, post_content, post_tag, post_cmnt_cnt, post_status)";
   $query .= "VALUES('{$post_cat}','{$post_title}','{$post_author}',now(),'{$post_image}','{$post_content}','{$post_tag}','{$post_cmnt_cnt}','{$post_status}')";
   $create_post_query = mysqli_query($connection, $query);
+  confirmQuery($create_post_query);
 
-  if(!$create_post_query){
-    die("QUERY FAILED".mysqli_error($connection));
-  }
+  // if(!$create_post_query){
+  //   die("You Have a Problem On Posting".mysqli_error($connection));
+  // }
 }
 
  ?>
